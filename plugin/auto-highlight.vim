@@ -46,7 +46,7 @@ function! s:ToggleAutoHighlightWord(enable)
   endif
 endfunction
 
-highlight! link AutoHighlightWord CursorLineNr
+highlight link AutoHighlightWord CursorLineNr
 
 if !exists('g:auto_highlight#disabled_on_start')
   call s:ToggleAutoHighlightWord(1)
