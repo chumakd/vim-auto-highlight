@@ -33,6 +33,7 @@ endfunction
 function! s:ToggleAutoHighlightWord(enable)
   let w:auto_highlight_enabled = a:enable
   if a:enable
+    highlight link AutoHighlightWord CursorLineNr
     if !exists('#AutoHighlightWord')
       augroup AutoHighlightWord
         autocmd!
